@@ -8,6 +8,16 @@ process.env.PORT = process.env.PORT || 3000;
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
 
+// FECHA DE EXPIRACION
+//60 SEG * 60 MIN * 24 HES * 30 D
+process.env.CADUCIDAD_TOKEN = 60 * 60 * 24 * 30;
+
+
+//SEED DE AUTENTICACION
+
+process.env.SEED = process.env.SEED || 'desarrollo';
+
+
 //BDD
 
 let urlDB;
